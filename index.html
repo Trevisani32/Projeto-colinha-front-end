@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aprendendo Front-End</title>
+  <link rel="stylesheet" href="_css/_Estilo.css">
+</head>
+<body>
+  <h2>HTML 5</h2>
+  <h3>Elementos</h3>
+  <p>Um elemento geralmente consiste em uma tag de abertura, o conteúdo e uma tag de fechamento. Uma tag é colocada entre colchetes angulares.</p>
+
+  <pre>
+    &lt;p&gt;Hello World!&lt;/p&gt;
+  </pre>
+
+  <pre>
+    &lt;p&gt; É a tag de abertura.
+    Hello World! É o conteúdo.
+    &lt;/p&gt; É a tag de fechamento.
+  </pre>
+
+  <p>O &lt;p&gt; é um elemento de parágrafo que informa ao navegador que o conteúdo interno é texto de "parágrafo".</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;p&gt;👋 Eu sou um novo desenvolvedor!&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>O &lt;body&gt; é o elemento que define o "corpo" de um documento HTML e é onde será armazenado qualquer conteúdo que queremos exibir ao usuário:</p>
+
+  <pre>
+    &lt;body&gt; É a tag de abertura inicia o "corpo".
+      &lt;p&gt;👋 eu sou um novo desenvolvedor!&lt;/p&gt; É algum texto em um elemento de parágrafo.
+    &lt;/body&gt; É a tag de fechamento encerra o "corpo".
+  </pre>
+
+  <p>Nota: Só pode haver um &lt;body&gt; elemento em um arquivo.</p>
+
+  <h3>Recuo</h3>
+  <p>Embora recuar o código HTML não seja necessário, fazer isso é uma boa prática porque torna seu código mais fácil de ler e visualizar os níveis de alinhamento.</p>
+
+  <p>Veja como recuar o bloco de código anterior:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;p&gt;👋 Eu sou um novo desenvolvedor!&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Veja como é muito mais fácil ler dessa maneira!<br>Recomendamos dois espaços para recuos ou use a tecla Tab.</p>
+
+  <h3>Títulos</h3>
+  <p>Vejamos mais alguns elementos.</p>
+
+  <p>Suponha que queremos adicionar um título ao nosso site que exiba uma notícia. Veja como faríamos isso usando um &lt;h1&gt; elemento de título e um &lt;p&gt; elemento de parágrafo:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Notícias Quentes! 🚨&lt;/h1&gt;
+      &lt;p&gt;Político é encontrado no banheiro do hotel com a cueca cheia de dinheiro.&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Existem seis níveis de títulos, de &lt;h1&gt; a &lt;h6&gt;.</p>
+
+  <img src="_imagens/exemplos-de-titulos.png" alt="Exemplo de títulos">
+
+  <p>Observação: somente um &lt;h1&gt; deve ser usado em um arquivo .html.</p>
+
+  <h3>Quebra de linha</h3>
+  <p>Suponha que também queiramos adicionar uma nova linha dentro de um elemento de parágrafo. Pressionar enter não adiantará, pois o HTML ignora múltiplos espaços e quebras de linha dentro dos elementos.</p>
+
+  <p>Então devemos usar a &lt;br&gt; tag break aqui!</p>
+
+  <p>A &lt;br&gt; tag break adiciona uma quebra de linha:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Notícias Quentes!&lt;/h1&gt;
+      &lt;p&gt;Super promoção nos cinemas brasileiros deixa o povo maluco.&lt;br&gt;Ingressos se esgotaram nos primeiros dias.&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Uma tag de fechamento automático não precisa ser fechada manualmente por uma tag de fechamento... ela não possui um fechamento separado &lt;/tag&gt;. A tag break é a primeira que encontramos.
+  O código final se tornará:</p>
+
+  <img src="_imagens/Exempo-tag-br.png" alt="Exemplo tag br">
+
+  <h3>Formatação de texto</h3>
+  <p>Agora que sabemos como exibir texto básico, como colocar frases em negrito, colocar novas palavras em itálico, sublinhar frases importantes e muito mais? 🔡</p>
+  <p>Para isso, precisamos de elementos de formatação de texto! Eles deixam os textos padrão mais elegantes.</p>
+  <p>Aqui estão alguns exemplos comuns:</p>
+
+  <pre>
+    &lt;b&gt; elemento para texto em negrito.
+    &lt;i&gt; elemento para colocar texto em itálico.
+    &lt;u&gt; elemento para sublinhar o texto.
+    &lt;s&gt; elemento para linha estar no meio do texto.
+  </pre>
+
+  <p>É assim que eles são usados:</p>
+
+  <pre>
+    &lt;b&gt;Elemento para texto em negrito.&lt;/b&gt;
+    &lt;i&gt;Elemento para colocar texto em itálico.&lt;/i&gt; 
+    &lt;u&gt;Elemento para sublinhar o texto.&lt;/u&gt; 
+    &lt;s&gt;Elemento para linha estar no meio do texto.&lt;/s&gt;
+  </pre>
+
+  <p>O resultado é assim:</p>
+  <img src="_imagens/exemplos-de-style.png" alt="Exemplos de formatação de texto">
+
+  <p>Observação: o &lt;b&gt; elemento serve apenas para aplicar negrito ao texto estilisticamente; o HTML também tem um &lt;strong&gt; elemento usado para transmitir que o conteúdo interno é importante, além de estilizá-lo para ficar em negrito.</p>
+
+  <p>Aqui estão todas as quatro tags em ação em um anúncio de sala de aula:</p>
+
+  <pre>
+    &lt;p&gt;Lembrando a todos que a &lt;i&gt;Palestra do Exame final&lt;/i&gt; será realizado no &lt;b&gt;auditório&lt;/b&gt;.&lt;br&gt;
+    A data prevista para a palestra será no dia &lt;u&gt;07/Agosto Sexta-Feira&lt;/u&gt; a partir das &lt;s&gt;PM&lt;/s&gt;8AM.&lt;/p&gt;   
+  </pre>
+
+  <p>Isso ficará parecido com:</p>
+  <img src="_imagens/Exemplos-tag.png" alt="Exemplo tags de texto">
+
+  <p>Observação: as tags acima são boas para aprender a estilizar texto com HTML básico, mas não são mais práticas recomendadas. Outras maneiras de estilizar texto serão abordadas no curso de CSS.</p>
+
+  <h3>Listas</h3>
+  <p>Listas são uma ótima maneira de gerenciar o tempo, descobrir o que precisa ser feito e lembrar das coisas. E é bom quando marcamos os itens como concluídos!</p>
+
+  <p>Aprenderemos sobre dois tipos de listas HTML:</p>
+
+  <pre>
+    &lt;ul&gt; Listas não ordenadas
+    &lt;ol&gt; Listas ordenadas
+  </pre>
+
+  <p>Para listas não ordenadas, também conhecidas como marcadores, comece com a &lt;ul&gt; tag e envolva cada item em um &lt;li&gt; elemento de item de lista. Assim:</p>
+
+  <pre>
+    &lt;ul&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre>
+
+  <img src="_imagens/exemplo-ul.png" alt="Exemplo lista não ordenada">
+
+  <p>Isso &lt;ul&gt; é ótimo para listar coisas em qualquer ordem. Mas e se quiséssemos numerar a lista?</p>
+
+  <p>Para listas ordenadas, também conhecidas como listas numeradas, usamos o &lt;ol&gt; elemento:</p>
+
+  <pre>
+    &lt;ol&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+    &lt;/ol&gt;
+  </pre>
+
+  <img src="_imagens/exemplo-Ol.png" alt="Exemplo lista ordenada">
+
+  <h3>Ligações</h3>
+  <p>O primeiro site de 1991 ainda está ativo: TheProject.html</p>
+
+  <p>O que você notou? Além de ser bem simples, tem um monte de links! 🔗</p>
+
+  <p>Os links são parte integrante da ideia da internet. São eles que permitem aos usuários se conectar a outros sites e navegar na web.</p>
+
+  <p>Então, como adicionamos um link para nossa página web?</p>
+
+  <p>Podemos usar o &lt;a&gt; elemento âncora! Esta tag de link nos permite adicionar um hiperlink a um trecho de texto.</p>
+
+  <p>Vamos ver como podemos fazer isso:</p>
+
+  <pre>
+    &lt;a href="https://archive.org/web"&gt;Internet Archive&lt;/a&gt;
+  </pre>
+
+  <p>Aqui, o &lt;a&gt; elemento âncora é semelhante a outras tags, onde o texto dentro é o que é exibido. Mas e quanto ao href interior da tag de abertura?</p>
+
+  <p>Uma href (referência de hiperlink) é uma referência ou ponteiro para outro site que está vinculado em nosso HTML. Ao clicar no texto "Internet Archive", o HTML redirecionará para esse site, que no nosso caso é https://archive.org/web.</p>
+
+  <p>Observação: isso também pode ser usado para apontar para um e-mail ou número de telefone usando um parâmetro mailto:, tel: ou sms:</p>
+
+  <pre>
+    &lt;a href="mailto:teste123@gmail.com"&gt;📧&lt;/a&gt;
+    &lt;a href="tel:212-555-2368"&gt;🤙&lt;/a&gt;
+    &lt;a href="sms:320-250-HTML"&gt;💬&lt;/a&gt;
+  </pre>
+
+  <h3>Imagens</h3>
+  <p>E se quisermos adicionar imagens? Podemos usar um formato semelhante, mas com o &lt;img&gt; elemento de imagem.</p>
+
+  <pre>
+    &lt;p&gt;Aqui um gato fofo:&lt;/p&gt;
+    &lt;img src="https://placekitten.com/200/200" alt="Gato"&gt;
+  </pre>
+
+  <p>O &lt;img&gt; elemento de imagem é outra tag de fechamento automático, portanto não tem uma tag de fechamento.</p>
+
+  <p>O <b>src</b> atributo, que significa “fonte”, especifica o caminho do arquivo da imagem.</p>
+  <p>"https://placekitten.com/200/200" é o caminho da imagem. Para a maioria das imagens, o caminho do arquivo pode ser encontrado clicando com o botão direito na imagem e selecionando "Copiar endereço da imagem".</p>
+
+  <p>Exemplo de como fica:</p>
+  <p>Aqui um gato fofo:</p>
+  <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=200&h=200&fit=crop" alt="Gato pequeno">
+
+  <p>[Fim da primeira parte sobre HTML]</p>
+</body>
+</html>
