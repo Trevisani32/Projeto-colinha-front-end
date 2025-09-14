@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Aprendendo Front-End</title>
+  <link rel="stylesheet" href="_css/_Estilo.css">
+</head>
+<body>
+  <h2>HTML 5</h2>
+  <h3>Elementos</h3>
+  <p>Um elemento geralmente consiste em uma tag de abertura, o conteúdo e uma tag de fechamento.<br> Uma tag é colocada entre colchetes angulares.</p>
+
+  <p><b>Tags:</b> Palavras-chave entre colchetes angulares que definem como o conteúdo é exibido.<br>
+  <b>Elementos:</b> Componentes formados por uma tag de início, conteúdo e uma tag de fim.</p>
+
+  <pre>
+    &lt;p&gt;Hello World!&lt;/p&gt;
+  </pre>
+
+  <pre>
+    &lt;p&gt; É a tag de abertura.
+    Hello World! É o conteúdo.
+    &lt;/p&gt; É a tag de fechamento.
+  </pre>
+
+  <p>O &lt;p&gt; é um elemento de parágrafo que informa ao navegador que o conteúdo interno é texto de "parágrafo".</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;p&gt;👋 Eu sou um novo desenvolvedor!&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>O &lt;body&gt; é o elemento que define o "corpo" de um documento HTML e é onde será armazenado qualquer conteúdo que queremos exibir ao usuário</p>
+
+  <pre>
+    &lt;body&gt; É a tag de abertura inicia o "corpo".
+      &lt;p&gt;👋 eu sou um novo desenvolvedor!&lt;/p&gt; É algum texto em um elemento de parágrafo.
+    &lt;/body&gt; É a tag de fechamento encerra o "corpo".
+  </pre>
+
+  <p>Nota: Só pode haver um &lt;body&gt;  em um arquivo.</p>
+
+  <h3>Recuo</h3>
+  <p>Embora recuar o código HTML não seja necessário, fazer isso é uma boa prática porque torna seu código mais fácil de ler e visualizar os níveis de alinhamento.<br>Veja como recuar o bloco de código anterior:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;p&gt;👋 Eu sou um novo desenvolvedor!&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Veja como é muito mais fácil ler dessa maneira.<br>Recomendasse dois espaços para recuos ou use a tecla Tab.</p>
+
+  <h3>Títulos</h3>
+
+  <p>Imaginamos que queremos adicionar um título ao nosso site que exiba uma notícia.<br> Veja como faríamos isso usando um &lt;h1&gt; elemento de título e um &lt;p&gt; elemento de parágrafo:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Notícias Quentes! &lt;/h1&gt;
+      &lt;p&gt;Político é encontrado no banheiro do hotel com a cueca cheia de dinheiro.&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Existem seis níveis de títulos, de &lt;h1&gt; a &lt;h6&gt;.</p>
+
+  <img src="_imagens/exemplos-de-titulos.png" alt="Exemplo de títulos">
+
+  <p>Observação: somente um &lt;h1&gt; deve ser usado em um arquivo .html.</p>
+
+  <h3>Quebra de linha</h3>
+  <p>Imaginamos que também queiramos adicionar uma nova linha dentro de um elemento de parágrafo. Pressionar enter não adiantará, pois o HTML ignora múltiplos espaços e quebras de linha dentro dos elementos.Então devemos usar a tag &lt;br&gt; (break) aqui.<br>A tag &lt;br&gt; adiciona uma quebra de linha:</p>
+
+  <pre>
+    &lt;body&gt;
+      &lt;h1&gt;Notícias Quentes!&lt;/h1&gt;
+      &lt;p&gt;Super promoção nos cinemas brasileiros deixa o povo maluco.&lt;br&gt;Ingressos se esgotaram nos primeiros dias.&lt;/p&gt;
+    &lt;/body&gt;
+  </pre>
+
+  <p>Uma tag de fechamento automático não precisa ser fechada manualmente por uma tag de fechamento, ela não possui um fechamento separado &lt;/tag&gt;. A tag break é a primeira que encontramos.
+  O código final se tornará:</p>
+
+  <img src="_imagens/Exempo-tag-br.png" alt="Exemplo tag br">
+
+  <h3>Formatação de texto</h3>
+  <p>Agora que sabemos como exibir um texto básico, veremos como colocar frases em negrito, colocar novas palavras em itálico, sublinhar frases importantes.<br>Para isso, precisamos de elementos de formatação de texto! Eles deixam os textos padrão mais elegantes.<br>Aqui estão alguns exemplos comuns:</p>
+
+  <pre>
+    &lt;b&gt; elemento para texto em negrito.
+    &lt;i&gt; elemento para colocar texto em itálico.
+    &lt;u&gt; elemento para sublinhar o texto.
+    &lt;s&gt; elemento para linha estar no meio do texto.
+  </pre>
+
+  <p>É assim que eles são usados:</p>
+
+  <pre>
+    &lt;b&gt;Elemento para texto em negrito.&lt;/b&gt;
+    &lt;i&gt;Elemento para colocar texto em itálico.&lt;/i&gt; 
+    &lt;u&gt;Elemento para sublinhar o texto.&lt;/u&gt; 
+    &lt;s&gt;Elemento para linha estar no meio do texto.&lt;/s&gt;
+  </pre>
+
+  <p>O resultado é assim:</p>
+  <img src="_imagens/exemplos-de-style.png" alt="Exemplos de formatação de texto">
+
+  <p>Observação: o &lt;b&gt; serve apenas para aplicar negrito ao texto estilisticamente, o HTML também tem um &lt;strong&gt; elemento usado para transmitir que o conteúdo interno é importante, além de estilizá-lo para ficar em negrito.</p>
+
+  <p>Aqui estão todas as quatro tags em ação em um anúncio de sala de aula:</p>
+
+  <pre>
+    &lt;p&gt;Lembrando a todos que a &lt;i&gt;Palestra do Exame final&lt;/i&gt; será realizado no &lt;b&gt;auditório&lt;/b&gt;.&lt;br&gt;
+    A data prevista para a palestra será no dia &lt;u&gt;07/Agosto Sexta-Feira&lt;/u&gt; a partir das &lt;s&gt;PM&lt;/s&gt;8AM.&lt;/p&gt;   
+  </pre>
+
+  <p>Isso ficará parecido com:</p>
+  <img src="_imagens/Exemplos-tag.png" alt="Exemplo tags de texto">
+
+  <p>Observação: as tags acima são boas para aprender a estilizar texto com HTML básico, mas não são mais práticas recomendadas. Outras maneiras de estilizar texto serão abordadas no CSS.</p>
+
+  <h3>Listas</h3>
+  <p>Listas são uma ótima maneira de gerenciar o tempo, descobrir o que precisa ser feito e lembrar das coisas.<br>Aprenderemos sobre dois tipos de listas HTML:</p>
+
+  <pre>
+    &lt;ul&gt; Listas não ordenadas
+    &lt;ol&gt; Listas ordenadas
+  </pre>
+
+  <p>Para listas não ordenadas, também conhecidas como marcadores, comece com a tag &lt;ul&gt; e envolva cada item em um elemento &lt;li&gt; de item de lista. Assim:</p>
+
+  <pre>
+    &lt;ul&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+    &lt;/ul&gt;
+  </pre>
+
+  <p>Exemplo:</p>
+
+  <img src="_imagens/exemplo-ul.png" alt="Exemplo lista não ordenada">
+
+  <p>Para listas ordenadas, também conhecidas como listas numeradas, usamos o &lt;ol&gt;:</p>
+
+  <pre>
+    &lt;ol&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+    &lt;/ol&gt;
+  </pre>
+
+  <p>Exemplo:</p>
+  <img src="_imagens/exemplo-Ol.png" alt="Exemplo lista ordenada">
+
+  <h3>Links</h3>
+
+  <p>Os links são parte integrante da ideia da internet. São eles que permitem aos usuários se conectar a outros sites e navegar na web.Podemos usar o &lt;a&gt; elemento âncora! Esta tag de link nos permite adicionar um hiperlink a um trecho de texto.<br>Vamos ver como podemos fazer isso:</p>
+
+  <pre>
+    &lt;a href="https://archive.org/web"&gt;Internet Archive&lt;/a&gt;
+  </pre>
+
+  <p>Aqui, o &lt;a&gt; elemento âncora é semelhante a outras tags, onde o texto dentro é o que é exibido. Mas e quanto ao href interior da tag de abertura?</p>
+
+  <p>Uma href (referência de hiperlink) é uma referência ou ponteiro para outro site que está vinculado em nosso HTML. Ao clicar no texto "Internet Archive", o HTML redirecionará para esse site, que no nosso caso é https://archive.org/web.</p>
+
+  <p>Observação: isso também pode ser usado para apontar para um e-mail ou número de telefone usando um parâmetro mailto:, tel: ou sms:</p>
+
+  <pre>
+    &lt;a href="mailto:teste123@gmail.com"&gt;&lt;/a&gt;
+    &lt;a href="tel:212-555-2368"&gt;&lt;/a&gt;
+    &lt;a href="sms:320-250-HTML"&gt;&lt;/a&gt;
+  </pre>
+
+  <h3>Imagens</h3>
+  <p>E se quisermos adicionar imagens? Podemos usar um formato semelhante, mas com o &lt;img&gt; elemento de imagem.</p>
+
+  <pre>
+    &lt;p&gt;Aqui um gato fofo:&lt;/p&gt;
+    &lt;img src="https://placekitten.com/200/200"&gt;
+  </pre>
+
+  <p>O &lt;img&gt; elemento de imagem é outra tag de fechamento automático, portanto não tem uma tag de fechamento.</p>
+
+  <p>O <b>src</b> atributo, que significa “fonte”, especifica o caminho do arquivo da imagem.</p>
+  <p>"https://placekitten.com/200/200" é o caminho da imagem. Para a maioria das imagens, o caminho do arquivo pode ser encontrado clicando com o botão direito na imagem e selecionando "Copiar endereço da imagem".</p>
+
+  <p>Exemplo de como fica:</p>
+  <p>Aqui um gato fofo:</p>
+  <img src="https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=200&h=200&fit=crop" alt="Gato pequeno">
+
+  <h3>Estrutura HTML</h3>
+  <p>Agora que sabemos como criar uma página web, vamos voltar ao básico e explorar como estruturar melhor nossos arquivos HTML.</p>
+
+  <p>Aqui estão alguns itens essenciais em um arquivo .html !</p>
+
+  <p>Este &lt;!DOCTYPE html&gt; é a declaração de tipo de documento que aparece no topo de um arquivo .html e informa ao navegador que o arquivo foi escrito em HTML5. Ela é usada com um &lt;html&gt; elemento que contém todo o código processado na página.</p>
+
+  <p>Nós os pulamos, mas todos os arquivos HTML devem começar com uma &lt;!DOCTYPE html&gt; declaração e o &lt;html&gt; elemento:</p>
+
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+      Codigo vai aqui
+    &lt;/html&gt;
+  </pre>
+
+  <p>Observe como o &lt;!DOCTYPE html&gt; não tem uma tag de fechamento, enquanto &lt;html&gt; o tem.</p>
+
+  <p>Dentro &lt;html&gt;, deve haver dois elementos:</p>
+
+  <pre>
+    &lt;head&gt;contém todas as informações do seu navegador que não estão visíveis na página.
+    &lt;body&gt;contém todo o conteúdo que você verá na página.
+  </pre>
+
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      codigos não visiveis vão aqui
+    &lt;/head&gt;
+    &lt;body&gt;
+      codigos visíveis vão aqui
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+  <p>O &lt;title&gt; elemento entra &lt;head&gt; e atribui texto à aba do navegador.</p>
+
+  <p>A aba do navegador fica assim quando você visita:</p>
+  
+  <img src="_imagens/exemplo-title.png">
+
+  <p>O código para isso seria:</p>
+
+  <pre>
+    &lt;!DOCTYPE html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;title&gt; Aprendendo Front-End &lt;/title&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      Mais codigos vão aqui
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+  <p>E todo o código "principal" vai para o &lt;body&gt; elemento.</p>
+
+  <h3>Comentários</h3>
+  <p>Comentários são úteis para anotar a lógica e as intenções por trás de diferentes partes da nossa página web. Eles nos ajudam a entender o que nosso código está fazendo, especialmente se ele foi escrito há algum tempo.</p>
+
+  <p>Os comentários não devem beneficiar apenas quem escreveu o código, mas também devem ser úteis para quem for revisá-lo posteriormente.</p>
+
+  <p>Como comentar em HTML? É simples:</p>
+
+  <pre>
+  &lt;!-- Eu sou um comentário --&gt;
+  &lt;P&gt;Eu não sou um comentário&lt;/P&gt;
+  </pre>
+
+  <p>Tudo o que está cercado pelos marcadores de comentário &lt;!-- --&gt; é ignorado e não é renderizado no navegador:</p>
+
+  <pre>
+  &lt;!-- Isso é um comentário. --&gt;
+  &lt;!-- &lt;P&gt; isso tambem é um comentario&lt;/P&gt; --&gt;
+  </pre>
+
+  <p>Os comentários são super flexíveis porque podem abranger várias linhas:</p>
+
+  <pre>
+  &lt;!--  
+    Tudo isso é um comentário.
+  --&gt;
+  </pre>
+
+  <p>Eles também podem ser usados ​​dentro de um elemento:</p>
+
+  <pre>
+  &lt;P&gt;Esse comentário é visível. &lt;!-- Mas esse não. --&gt; &lt;/P&gt;
+  </pre>
+
+  <p>Observação: não é recomendável exagerar nos comentários. Eles devem ser usados ​​com moderação e removidos quando não forem mais necessários.</p>
+
+  <h3>Atributos</h3>
+  <p>Atributos são configurações adicionais que podemos usar para personalizar um elemento.</p>
+
+  <p>Geralmente são pares nome/valor, como name="value", onde o nome e o valor são separados por um sinal de igual:</p>
+
+  <pre>
+  &lt;element name="value"&gt;conteúdo&lt;/element&gt;
+  
+  O name indica o atributo que estamos definindo para nosso elemento.
+  O "value" atributo for(para) é colocado entre "" aspas duplas.
+  </pre>
+
+  <p>Por exemplo, por padrão, o &lt;ol&gt; elemento da lista ordenada usa números para rotular seus &lt;li&gt; elementos de item de lista.</p>
+
+  <pre>
+  &lt;ol&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+  &lt;/ol&gt;
+  </pre>
+
+  <p>Lista ordenada com itens numerados.</p>
+  <img src="_imagens/exemplo-Ol.png">
+
+  <p>Se quisermos usar letras minúsculas:</p>
+
+  <pre>
+  &lt;ol type="a"&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+  &lt;/ol&gt;
+  </pre>
+
+  <p>Lista ordenada com itens organizados por letra minúscula.</p>
+  <img src="_imagens/exemplo-ol-letra.png">
+
+  <p>Ou, se quiser usar algarismos romanos:</p>
+
+  <pre>
+  &lt;ol type="i"&gt;
+      &lt;li&gt;Ir para uma cafetéria.&lt;/li&gt;
+      &lt;li&gt;Codificar por 45 min.&lt;/li&gt;
+      &lt;li&gt;Tirar um tempo para descansar.&lt;/li&gt;
+  &lt;/ol&gt;
+  </pre>
+
+  <p>Lista ordenada com itens organizados por algarismos romanos minúsculos.</p>
+  <img src="_imagens/exemplo-ol-romano.png">
+
+  <h3>Atributos na tag de imagem</h3>
+  <p>Já usamos alguns atributos diferentes no curso. Lembram quando aprendemos sobre imagens?</p>
+
+  <img src="https://www.codedex.io/images/tier1.png">
+
+  <P>O &lt;img&gt; usa o src atributo para especificar o caminho do arquivo de uma imagem.</P>
+
+  <p>Além disso src, também podemos usar o altatributo para tornar nossas imagens mais acessíveis.</p>
+
+  <pre>
+  &lt;img alt="garota usando um notebook" src="https://www.codedex.io/images/tier1.png"&gt;
+  </pre>
+
+  <p>Se a nossa imagem não aparecer por algum motivo, o alt texto será exibido! Isso permite que dispositivos assistivos leiam o nosso texto e descrevam a imagem.</p> 
+
+  <h3>Atributo na Tag Âncora</h3>
+  <p>Também nos deparamos com atributos ao aprender sobre o uso de links com &lt;a&gt; tags de âncora:</p>
+
+  <pre>
+  &lt;a&gt; href="https://www.codedex.io/">Codédex&lt;/a&gt;
+  </pre>
+
+  <p>O atributo href é onde adicionamos uma URL que pode ser visitada quando o texto do hiperlink é clicado.</p>
+
+  <p>Também podemos usar o atributo target e defini-lo para "_blank" para fazer com que o link abra em uma nova aba do navegador:</p>
+
+  <pre>
+  &lt;a&gt; href="https://www.codedex.io/" target="_blank">Codédex&lt;/a&gt;
+  </pre>
+
+  <h3>Classes e IDs</h3>
+  <p>Os dois atributos que mais encontraremos são os atributos classe id. Qualquer elemento pode usá-los.<br>Embora classe id sejam usados ​​para rotular elementos, os dois apresentam diferenças importantes.</p>
+
+  <p>Um elemento pode receber vários class/valores na forma de uma lista separada por espaços:</p>
+  
+  <pre>
+  &lt;p&gt;class="primeiro-value segundo-value terceiro-value">Hello, World&lt;/p&gt;
+  </pre>
+
+  <p>Cada elemento pode ter apenas um id=valor, sem espaços. Cada valor de id deve ser único em toda a página:</p>
+
+  <pre>
+  &lt;p&gt; id="value">Hello, World&lt;/p&gt;
+  </pre>
+
+  <p>Além disso, id pode ser usado para vincular a outra parte da mesma página, como o título! Isso pode ser associado ao atributo &lt;a&gt; de um elemento âncora por meio de um símbolo de hashtag, seguido pelo identificador usado para: href#id </p>
+
+  <pre>
+    &lt;a&gt; href="#saopaulo">Link para sao paulo&lt;/a&gt;
+
+    &lt;h2&gt; class="city" id="saopaulo">São Pualo&lt;/h2&gt;
+  </pre>
+
+  <p>Por fim, onde apenas um id pode ser atribuído a um único elemento, um class pode ser atribuído a muitos:</p>
+
+  <pre>
+    &lt;h2&gt; class="city" id="saopaulo">São Paulo&lt;/h2&gt;
+    &lt;h2&gt; class="city" id="minasgerais">Minas Gerais&lt;/h2&gt;
+    &lt;h2&gt; class="city" id="avai">avai &lt;/h2&gt;
+  </pre>
+
+  <p>Os valores dos atributos classe id devem sempre estar em letras minúsculas. Se o nome for composto por várias palavras, eles devem ser separados por hífens -.</p>
+
+  <p>Nota: Uma boa maneira de lembrar class vs id... pode haver vários alunos em uma turma , mas cada aluno deve ter um ID exclusivo .</p>
+
+  <h3>Elemento de Divisão</h3>
+  <p>Uma das maneiras mais comuns de criar seções para uma página é com o elemento &lt;div&gt; (abreviação de "divisão").</p>
+
+  <p>O &lt;div&gt; é como um contêiner genérico sem significado específico. Este elemento e os class e id podem andar de mãos dadas.</p>
+
+  <p>Por exemplo, veja este site:</p>
+
+  <pre>
+    &lt;div class="page-section" id="Sobre-mim"&gt;
+      &lt;h2&gt;Sobre mim&lt;/h2&gt;
+      &lt;p&gt;Sou um aspirante a desenvolvedor web!&lt;/p&gt;
+    &lt;/div&gt;
+
+    &lt;div class="page-section" id="social-media"&gt;
+      &lt;h2&gt;Social:&lt;/h2&gt;
+        &lt;ul&gt;
+          &lt;il&gt;GitHub&lt;il&gt;
+          &lt;il&gt;Twitter&lt;il&gt;
+          &lt;il&gt;LinkedIn&lt;il&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+  </pre>
+
+  <p>O &lt;div&gt; é usado para agrupar conteúdo e ser rotulado pelos atributos classe id.<br>E ele só é algo importante semânticamente e nao visualmente.</p>
+  
+  <h3>O atributo style</h3>
+  <p>Até agora, a aparência das nossas páginas tem sido bem esquelética. Apenas texto simples com uma lista, imagem ou link ocasional.<br>
+  Mas e se houvesse maneiras de melhorar isso em nossos arquivos .html ? E, na verdade, existem!<br>
+  Primeiro, podemos aplicar um atributo style a qualquer elemento HTML para estilizar certos aspectos desse elemento, como a cor que o texto deve ter:</p>
+
+  <pre>
+    &lt;p&gt;
+      Rosas são &lt;spanstyle="color:red;">vermelhas&lt;/span&gt;.
+      Violetas são &lt;spanstyle="color:blue;">azuis&lt;/span&gt;.
+    &lt;/p&gt;
+  </pre>
+
+  <p>Este atributo utiliza uma sintaxe especial onde um estilo é composto por uma propriedade (ou seja, color) e um valor ( red), separados por :dois pontos. Vários estilos podem ser aplicados a um único elemento, mas devem ser separados por ponto e vírgula ;.</p>
+
+  <pre>
+    &lt;p&gt;
+      Rosas são &lt;span style="color:red; text-decoration:underline;">vermelhas&lt;/span&gt;.
+      Violeta são &lt;span style="color:blue; text-decoration:underline;">azuis&lt;/span&gt;.
+    &lt;/p&gt;
+  </pre>
+
+  <p>A seguir está o parágrafo renderizado com nossos estilos aplicados ao elemento &lt;span&gt; do qual ele deixa a estilização apenas dentro do elemento span:</p>
+
+  <img src="_imagens/exemplo-style.png">
+
+  <p>A color propriedade define a cor do texto de um elemento.<br>Adicione text-decoration formatação de texto (como underline), semelhante ao que os elementos &lt;b&gt;, &lt;i&gt;, &lt;u&gt; fazem. <br>Na verdade, esta é uma linguagem chamada CSS, que aprenderemos numa próxima.</p>
+
+  <h3>style</h3> 
+  <p>Usar o style atributo para alguns elementos é uma coisa. Mas e se quisermos adicionar estilos a vários elementos diferentes? Ou se quisermos adicionar os mesmos estilos a cada instância de um elemento específico?</p>
+
+  <p> Alternativamente, o &lt;style&gt; elemento pode ser usado &lt;head&gt; para estilizar nossos elementos no &lt;body&gt;.</p>
+
+  <pre>
+    &lt;!doctype html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;style&gt;
+          elemtendo do style vao aqui
+      &lt;/style&gt;
+    &lt;head&gt;
+    &lt;body&gt;
+        elementos estilizado aparecem aqui
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+  <p>Os elementos podem ser selecionados dentro do &lt;style&gt; elemento usando { } chaves:</p>
+
+  <pre>
+    &lt;style&gt;
+      element {
+        propriedade: valor;
+      }
+    &lt;/style&gt;
+  </pre>
+
+  <p>Lembra quando aprendemos sobre os atributos classe id? Dentro do &lt;style&gt; elemento, você pode usar um ponto final .(classe) ou uma hashtag #(id) para selecionar um ou mais elementos específicos que tenham um class ou id, respectivamente:</p>
+
+  <pre>
+    &lt;!doctype html&gt;
+    &lt;html&gt;
+    &lt;head&gt;
+      &lt;style&gt;
+        span {
+          text-decoration: underline;
+        }
+
+        #red-word {
+          color: red;
+        }
+
+        #blue-word {
+          color: blue;
+        }
+      &lt;/style&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+      &lt;p&gt;
+        Roses are &lt;spanid="red-word">red&lt;/span&gt;
+        Violets are &lt;spanid="blue-word">blue&lt;/span&gt;
+      &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+  </pre>
+
+
+
+</body>
+</html>
